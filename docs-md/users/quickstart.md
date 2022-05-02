@@ -1,15 +1,11 @@
 
-# Quick Start Guide
+# Quick Start Guide [![GitHub User's stars](https://img.shields.io/github/stars/ambianic?style=social)](https://github.com/ambianic)
 
-Ambianic is an [award winning](https://blog.ambianic.ai/2020/11/05/awards.html) ambient intelligence platform. Ambianic's goal is to provide helpful and actionable observations in the context of home and business automation.
+[![Join the Slack chat room](https://img.shields.io/badge/Slack-Join%20the%20chat%20room-blue)](https://join.slack.com/t/ambianicai/shared_invite/zt-eosk4tv5-~GR3Sm7ccGbv1R7IEpk7OQ)
 
-Ambianic has two major components: 
-- Ambianic Edge: an IoT device with camera (or other sensors) and a built-in AI engine for local inference
-- Ambianic UI app - a front-end Progressive Web App to manage Ambianic Edge device(s) and view timeline events reported by Ambianic Edge.
+Ambianic consists a several modules as illustrated below:
 
-Following is a high level diagram of a typical Ambianic deployment.
-
-![Ambianic High Level Diagram](../assets/images/Ambianic-High-Level-Diagram.png)
+![Ambianic-Modules](https://user-images.githubusercontent.com/2234901/146073425-972f8470-52fc-4ec0-83d1-a1e601bacd81.png)
 
 ## Recommended Install
 
@@ -66,44 +62,9 @@ The installer will start the service for you. To manage the runtime you can use 
 
 [Ambianic UI](https://ui.ambianic.ai/) is a
 modern prorgressive web application (PWA) that provides Plug-and-Play pairing and remote access
-to an Ambianic Edge device.
+to Ambianic Edge devices.
 
-Ambianic UI shows a timeline view with
-important events around your home organized chronologically. Below is an example
-timeline screenshot.
-
-![Timeline](../assets/images/timeline-screen.png)
-
-### Pairing Ambanic UI with Ambianic Edge
-
-You can easily pair up your Ambianic UI with Ambianic Edge. It works similar to Airdrop.
-
-Make sure to open Ambianic UI on the same local network where Ambianic Edge runs. Ambianic UI will initially display a welcome screen.
-
-![Home Screen](../assets/images/home-screen.png)
-
-If you click on Settings, it will show  a pairing page like the one below:
-
-![Pairing](../assets/images/pairing-screen.png)
-
-After a few moments, pairing will conclude and you will see the unique identifier of your Ambianic Edge device.
-
-![Connected](../assets/images/connected-screen.png)
-
-IYou can now head to the Timeline view and you will be able to see an image of what is in front of the Ambianic Box. The box is pre-configured to detect people and over 20 kinds of objects. Detections will show in your timeline.
-
-Congratulations! Your Ambianic instance is now up and running!
-
-The pairing information is persisted on your Ambianic UI client device and you can now access Ambianic Edge from anywhere remotely! The connection is direct and encrypted end-to-end.
-
-When you are ready to explore more advanced capabilities, continue to the next section.
-
-### Configuration
-
-Ambianic provides flexible configuration options via a configuration YAML file. You can customize: pipelines, input sources, AI models, notification channels and more.
-
-Read on: [Configuring Ambianic Edge](configure.md).
-
+[Read more](ambianicui.md) about Ambianic UI.
 
 ## Development
 

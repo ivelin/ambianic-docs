@@ -1,12 +1,45 @@
-# Ambianic Box
+# Ambianic Box [![GitHub Repo stars](https://img.shields.io/github/stars/ambianic/ambianic-box?style=social)](https://github.com/ambianic/ambianic-box)
 
 [![Join the Slack chat room](https://img.shields.io/badge/Slack-Join%20the%20chat%20room-blue)](https://join.slack.com/t/ambianicai/shared_invite/zt-eosk4tv5-~GR3Sm7ccGbv1R7IEpk7OQ)
 
-Ambianic Box is the recommended enclosure for DIY (do-it-yourself) installations of Ambianic Edge.
+Ambianic Box is the recommended enclosure for DIY (do-it-yourself) installations of Ambianic Edge. It is a 3D enclosure for Raspberry Pi 4B with a Raspberry Pi Camera.
 
-<img src="https://github.com/ambianic/ambianic-box/raw/main/ambianic_box_rendering.png" height="400"/>
+<span aligh="left">
+  <img src="https://user-images.githubusercontent.com/2234901/99598679-87df9000-29bf-11eb-9d62-ddb1b402e803.jpeg" height="400"/>
+  <img src="https://user-images.githubusercontent.com/2234901/99598684-8910bd00-29bf-11eb-9b8c-be91dfa28021.jpeg" height="400"/>
+<span>
+ 
+# Why do I need a DIY camera?
+
+Short answer: because you care about your family data privacy.
+ 
+Most camera manufacturers want you to use their own app for access to their cameras and integration into their own home automation platforms. They are protecting current and future revenue. Trying to please multiple masters with different demands: end users who want a great product and investors who want great ROI. That creates a trend to move towards centralized cloud subscription and data collection services which have been proven prone to hacks and massive user data leaks. It is hard to build trust with users without verifiable code transparency proving protection of user data privacy. 
+
+Furthermore proprietary camera manufacturers don't make it easy to access their products via open APIs. RTSP is available in some models, but hard to figure out. ONVIF is partially supported and usually hidden behind several proprietary enablement steps. Turned off by defauly more often than not. It often requires installing custom, unsupported firmware in order to open RTSP or RTMP access. And there is no telling if and when that option may be discontinued. It depends on company policy.
+  
+So here we go. Let's build something that works for Open Source developers and DIY folks.
 
 You can 3D Print an Ambianic Box at home ([here is the source](https://github.com/ambianic/ambianic-box)) or order a 3D print online through a service such as [craftcloud3d.com](https://craftcloud3d.com/configuration/c7faee7e-ec06-41ed-822c-4092bdf1d28d) or [makexyz.com](https://www.makexyz.com/).
+
+Alternatively, if you don't want to 3D print an enclosure, you can order a kit such as [this ony by Labists](https://labists.com/collections/all/products/labists-raspberry-pi-4g-ram-32gb-card) which includes a usable enclosure box and other components required to build an Ambianic Edge device.
+
+For outdoor use, you can also buy an inexpensive dummy camera ($5-9) enclosure with enough room to accomodate a Raspberry Pi and a Pi camera module ([1](https://www.amazon.com/dp/B079GNVSTL), [2](https://www.amazon.com/dp/B08952NFRX), [3](https://www.amazon.com/dp/B08TM1D58H), [4](https://www.amazon.com/WALI-Surveillance-Security-Outdoor-Warning/dp/B019405SQM)).
+
+<a href="https://www.amazon.com/dp/B079GNVSTL">
+  <img src="https://user-images.githubusercontent.com/2234901/166242496-915adca4-e772-46db-b8ec-b98ff2e0072d.jpg" height="160"/>
+</a>
+<a href="https://www.amazon.com/WALI-Surveillance-Security-Outdoor-Warning/dp/B019405SQM">
+  <img src="https://user-images.githubusercontent.com/2234901/166243174-0e234604-3e11-4700-b5d8-81b589576d94.jpg" height="160"/>
+</a>
+<a href="https://www.amazon.com/SZYAN-Security-Surveillance-Simulated-Flashing/dp/B08TLTQ57Z">
+  <img src="https://user-images.githubusercontent.com/2234901/166242674-d43c25ac-50da-48ce-827f-aeb6b95ef087.jpg" height="160"/>
+</a>
+<a href="https://www.amazon.com/dp/B08TM1D58H">
+  <img src="https://user-images.githubusercontent.com/2234901/166242527-44bc8435-8386-4e6e-b1d4-7247c25ce47c.jpg" height="160"/>
+</a>
+<br/>
+<img src="https://user-images.githubusercontent.com/2234901/166242465-c728975e-4a12-4ca0-9d85-d7fb08f9af66.jpeg" height="200"/>
+
 
 # Components
 
@@ -33,7 +66,13 @@ If you don't have a 3D printer handy for the box enclosure, you can use an onlin
 
 ## Instructional Video
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed//Tys3lW9tNAU' frameborder='0' allowfullscreen></iframe></div>
+<style >
+  .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+</style>
+
+<div class='embed-container'>
+  <iframe src='https://www.youtube.com/embed//Tys3lW9tNAU' frameborder='0' allowfullscreen></iframe>
+</div>
 
 ## Slides
 
@@ -66,4 +105,10 @@ If you don't have a 3D printer handy for the box enclosure, you can use an onlin
 Ambianic Box can stand up on a flat surface or it can be mounted. For wall mount, there are several options. The box has two  openings on the back side that can be attached to wall mount hooks. Alternatively if you don't feel like drilling into your wall, the box is light enough to mount via two sided mounting tape such as [this one](https://www.amazon.com/gp/product/B07LFRN1K8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 
 ---
+  
+ 
+# Installing Ambianic Edge
 
+Ambianic Box comes to live once Ambianic Edge software is installed. Follow [this step by step install guide](https://docs.ambianic.ai/users/ambianicedge/).
+
+  
